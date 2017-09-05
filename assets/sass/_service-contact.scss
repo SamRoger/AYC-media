@@ -1,0 +1,153 @@
+.service-contact{
+	text-align: center;
+	/*border: 2px solid red;*/
+	width: 100%;
+	left: 0;
+	margin: 0 auto;
+	position: relative;
+	bottom: 80px;
+}
+
+.hand-tool-logo{
+	position: relative;
+	transform: rotate(-90deg);
+}
+
+.left-side{
+	font-size: 10px;
+	position: absolute;
+	left: 6%;
+	top: 110px;
+	/*border: 2px solid green;*/
+	width: 50%;
+}
+
+.right-side{
+	font-size: 10px;
+	position: relative;
+	top: 110px;
+	left: 44%;
+	/*border: 2px solid blue;*/
+	width: 50%;
+}
+
+.service, .contact-us{
+	color: $burgandy;
+}
+
+.airplane-logo {
+	height: 35px;
+}
+
+.service-header1{
+	color: $green;
+	margin-top: 20px;
+	position: relative;
+	/*left: 34%;*/
+	text-align: left;
+	font-size: $contact-font-size;
+}
+
+.service-header2{
+
+	color: $green;
+	margin-top: 10px;
+	position: relative;
+	/*left: 34%;*/
+	text-align: left;
+	font-size: $contact-font-size;
+}
+
+.service-align{
+	/*border: 2px solid blue;*/
+	margin: 0 auto;
+	position: relative;
+	/*left: 25%;*/
+	width: 50%;
+	text-align: left;
+}
+
+.all-services{
+	margin-top: 15px;
+	font-size: 7px;
+	color: #fff;
+	width: 70%;
+	text-align: center;
+	padding: 5px;
+	background-color: $green;
+	&:hover{
+		cursor: pointer;
+		color: #000;
+	}
+	&:active{
+		background-color: $burgandy;
+	}
+}
+
+.card-logo{
+	margin-right: 7px;
+}
+
+.name{
+	font-size: $contact-font-size;
+	color: $green;
+	display: inline;
+}
+
+.align-right1{
+	display: inline-block;
+	text-align: left;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.align-right2{
+	display: inline-block;
+	position: relative;
+	left: 43px;
+	text-align: left;
+	margin-top: 20px;
+}
+
+.email,.office,.mobile{
+	font-weight: 900;
+	color: $green;
+	display: inline;
+}
+
+.email,
+.the-email,
+.office,
+.office-num,
+.mobile,
+.mobile-num{
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

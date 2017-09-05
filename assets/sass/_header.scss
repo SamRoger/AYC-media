@@ -1,0 +1,123 @@
+.header{
+	width: 90%;
+	margin: 0 auto;
+	/*text-align: center !important;*/
+	color: $burgandy;
+	/*border: 2px solid green;*/
+
+}
+
+.logo-container{
+	border: 2px solid green;
+	position: relative;
+	left: 6px;
+	bottom: 58px;
+	/*text-align: center;*/
+	width: 50%;
+	margin: 0 auto;
+	font-size: $header-font-size;
+}
+
+.nav-bar{
+	bottom: 21px;
+	width: 100%;
+	font-weight: 900;
+	position: relative;
+	z-index: 10;
+	margin-top:51px;
+}
+
+.logo-name {
+	text-align: left;
+	/*border: 2px solid red;*/
+	position: relative;
+	top: 60px;
+}
+
+.co-name{
+	font-size: 10px;
+	font-weight: 900;
+}
+
+.header-gen-inq{
+	border: 2px solid green;
+	display: inline-block;
+	font-size: $header-font-size;
+}
+
+.header-toll-free{
+	padding-left: 5px;
+	border: 2px solid red;
+	display: inline-block;
+	font-size: $header-font-size;
+}
+
+.header-contact-cont{
+	top: 0;
+	text-align: right;
+	margin: 0 auto;
+	width: 68%;
+	border: 2px solid yellow;
+}
+
+.gen-inq, .gen-toll{
+	color: $green;
+}
+
+.gen-num, .gen-toll-num{
+	font-weight: 900;
+}
+
+li{
+	padding-left: 25px;
+	font-size: $header-font-size;
+	/*border: 2px solid blue;*/
+	display: inline-flex;
+	/*margin-top: 17%;*/
+}
+
+.logo{
+	background-color: $burgandy;
+	height: 29px;
+	border-radius: 33px;
+}
+
+a{
+	color: $burgandy;
+	text-decoration: none;
+	&:hover{
+		color: $green;
+		cursor: pointer;
+	}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

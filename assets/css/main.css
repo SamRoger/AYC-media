@@ -1,0 +1,321 @@
+@media only screen and (max-width: 1199px) {
+  .header-contact-cont {
+    width: 100% !important;
+    /*border: 2px solid yellow;*/ } }
+@media only screen and (max-width: 1061px) {
+  .nav-bar {
+    text-align: center; } }
+@media only screen and (max-width: 677px) {
+  .nav-bar {
+    text-align: left !important;
+    position: relative;
+    bottom: 31px !important;
+    text-align: center; } }
+/*
+@media only screen and (max-width: 641px) {
+    .nav-bar{
+    	text-align: left !important;
+    	position: relative;
+
+		text-align: center;
+    }
+	
+}*/
+@media only screen and (max-width: 1156px) {
+  .footer {
+    margin-top: 20px !important; } }
+@media only screen and (max-width: 970px) {
+  .footer {
+    margin-top: 50px !important; } }
+@media only screen and (max-width: 935px) {
+  .footer {
+    margin-top: 80px !important; } }
+@media only screen and (max-width: 829px) {
+  .footer {
+    margin-top: 110px !important; } }
+@media only screen and (max-width: 767px) {
+  .left-side {
+    width: 100% !important;
+    position: relative !important;
+    margin: 0 auto !important; }
+
+  .right-side {
+    width: 100% !important;
+    position: relative !important;
+    top: 130px !important;
+    left: 0 !important;
+    /*left: 30% !important;*/ }
+
+  .footer {
+    position: relative !important;
+    top: -30px !important; }
+
+  .hand-tool-logo, .service {
+    position: relative;
+    right: 20px; } }
+.header {
+  width: 90%;
+  margin: 0 auto;
+  /*text-align: center !important;*/
+  color: #4f0e1f;
+  /*border: 2px solid green;*/ }
+
+.logo-container {
+  border: 2px solid green;
+  position: relative;
+  left: 6px;
+  bottom: 58px;
+  /*text-align: center;*/
+  width: 50%;
+  margin: 0 auto;
+  font-size: 6px; }
+
+.nav-bar {
+  bottom: 21px;
+  width: 100%;
+  font-weight: 900;
+  position: relative;
+  z-index: 10;
+  margin-top: 51px; }
+
+.logo-name {
+  text-align: left;
+  /*border: 2px solid red;*/
+  position: relative;
+  top: 60px; }
+
+.co-name {
+  font-size: 10px;
+  font-weight: 900; }
+
+.header-gen-inq {
+  border: 2px solid green;
+  display: inline-block;
+  font-size: 6px; }
+
+.header-toll-free {
+  padding-left: 5px;
+  border: 2px solid red;
+  display: inline-block;
+  font-size: 6px; }
+
+.header-contact-cont {
+  top: 0;
+  text-align: right;
+  margin: 0 auto;
+  width: 68%;
+  border: 2px solid yellow; }
+
+.gen-inq, .gen-toll {
+  color: #4f915b; }
+
+.gen-num, .gen-toll-num {
+  font-weight: 900; }
+
+li {
+  padding-left: 25px;
+  font-size: 6px;
+  /*border: 2px solid blue;*/
+  display: inline-flex;
+  /*margin-top: 17%;*/ }
+
+.logo {
+  background-color: #4f0e1f;
+  height: 29px;
+  border-radius: 33px; }
+
+a {
+  color: #4f0e1f;
+  text-decoration: none; }
+  a:hover {
+    color: #4f915b;
+    cursor: pointer; }
+
+.hero {
+  border: 1px solid #4f0e1f;
+  margin: 0 auto;
+  width: 90%;
+  height: 200px;
+  margin-top: -55px; }
+
+.hero-footer {
+  position: relative;
+  border: 1px solid #4f0e1f;
+  background-color: #4f0e1f;
+  margin: 0 auto;
+  width: 90%;
+  height: 100px; }
+
+.hero-footer-text {
+  font-size: 13px;
+  color: #fff;
+  height: 100px;
+  position: relative;
+  top: 15px;
+  margin: 0 auto;
+  text-align: center;
+  width: 40%; }
+
+.service-contact {
+  text-align: center;
+  /*border: 2px solid red;*/
+  width: 100%;
+  left: 0;
+  margin: 0 auto;
+  position: relative;
+  bottom: 80px; }
+
+.hand-tool-logo {
+  position: relative;
+  transform: rotate(-90deg); }
+
+.left-side {
+  font-size: 10px;
+  position: absolute;
+  left: 6%;
+  top: 110px;
+  /*border: 2px solid green;*/
+  width: 50%; }
+
+.right-side {
+  font-size: 10px;
+  position: relative;
+  top: 110px;
+  left: 44%;
+  /*border: 2px solid blue;*/
+  width: 50%; }
+
+.service, .contact-us {
+  color: #4f0e1f; }
+
+.airplane-logo {
+  height: 35px; }
+
+.service-header1 {
+  color: #4f915b;
+  margin-top: 20px;
+  position: relative;
+  /*left: 34%;*/
+  text-align: left;
+  font-size: 15px; }
+
+.service-header2 {
+  color: #4f915b;
+  margin-top: 10px;
+  position: relative;
+  /*left: 34%;*/
+  text-align: left;
+  font-size: 15px; }
+
+.service-align {
+  /*border: 2px solid blue;*/
+  margin: 0 auto;
+  position: relative;
+  /*left: 25%;*/
+  width: 50%;
+  text-align: left; }
+
+.all-services {
+  margin-top: 15px;
+  font-size: 7px;
+  color: #fff;
+  width: 70%;
+  text-align: center;
+  padding: 5px;
+  background-color: #4f915b; }
+  .all-services:hover {
+    cursor: pointer;
+    color: #000; }
+  .all-services:active {
+    background-color: #4f0e1f; }
+
+.card-logo {
+  margin-right: 7px; }
+
+.name {
+  font-size: 15px;
+  color: #4f915b;
+  display: inline; }
+
+.align-right1 {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+.align-right2 {
+  display: inline-block;
+  position: relative;
+  left: 43px;
+  text-align: left;
+  margin-top: 20px; }
+
+.email, .office, .mobile {
+  font-weight: 900;
+  color: #4f915b;
+  display: inline; }
+
+.email,
+.the-email,
+.office,
+.office-num,
+.mobile,
+.mobile-num {
+  display: inline-block; }
+
+.footer {
+  text-align: center;
+  position: relative;
+  top: 80px;
+  margin: 0 auto;
+  width: 90%;
+  height: 170px;
+  background-color: #4f0e1f; }
+
+.logo2 {
+  margin-top: 20px;
+  background-color: #4f915b;
+  border-radius: 33px;
+  height: 39px; }
+
+.footer-logo {
+  color: #4f915b;
+  font-size: 10px;
+  font-weight: 900; }
+
+.footer-info {
+  margin-top: 15px;
+  font-size: 10px; }
+
+.slogan2 {
+  font-size: 6px;
+  font-weight: 900;
+  color: #4f915b; }
+
+.footer-num, .footer-free {
+  color: #4f915b; }
+
+.footer-address,
+.first-line {
+  color: #fff; }
+
+.third-line {
+  margin-top: 5px;
+  font-size: 6px;
+  color: rgba(255, 255, 250, 0.6); }
+
+html {
+  min-height: 100%;
+  width: 100%; }
+
+body {
+  font-family: 'Sarala', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  margin: 0 auto;
+  width: 55%;
+  /*border: 2px solid green;*/ }
+
+/*# sourceMappingURL=main.css.map */

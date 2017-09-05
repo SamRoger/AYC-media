@@ -1,0 +1,27 @@
+.hero{
+	border: 1px solid $burgandy;
+	margin: 0 auto;
+	width: 90%;
+	height: 200px;
+	margin-top: -55px;
+}
+
+.hero-footer{
+	position: relative;
+	border: 1px solid $burgandy;
+	background-color: $burgandy;
+	margin: 0 auto;
+	width: 90%;
+	height: 100px;
+}
+
+.hero-footer-text{
+	font-size: 13px;
+	color: #fff;
+	height: 100px;
+	position: relative;
+	top: 15px;
+	margin: 0 auto;
+	text-align: center;
+	width: 40%;
+}
