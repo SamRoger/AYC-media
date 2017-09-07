@@ -1,3 +1,8 @@
+@keyframes menuFade {
+  from {
+    color: #4f0e1f; }
+  to {
+    color: #4f915b; } }
 @media only screen and (max-width: 1199px) {
   .header-contact-cont {
     width: 100% !important;
@@ -5,22 +10,24 @@
 @media only screen and (max-width: 1061px) {
   .nav-bar {
     text-align: center; } }
-@media only screen and (max-width: 677px) {
-  .nav-bar {
-    text-align: left !important;
-    position: relative;
-    bottom: 31px !important;
-    text-align: center; } }
-/*
-@media only screen and (max-width: 641px) {
-    .nav-bar{
-    	text-align: left !important;
-    	position: relative;
+@media only screen and (max-width: 700px) {
+  .header {
+    width: 70% !important;
+    height: 120px !important; } }
+@media only screen and (max-width: 430px) {
+  .logo-name-container {
+    display: block !important; }
 
-		text-align: center;
-    }
-	
-}*/
+  .nav-bar {
+    position: relative !important;
+    top: 20px !important;
+    right: 18px; } }
+@media only screen and (max-width: 550px) {
+  .header {
+    width: 90% !important; } }
+@media only screen and (max-width: 1028px) {
+  .align-right2 {
+    position: relative !important; } }
 @media only screen and (max-width: 1156px) {
   .footer {
     margin-top: 20px !important; } }
@@ -33,117 +40,105 @@
 @media only screen and (max-width: 829px) {
   .footer {
     margin-top: 110px !important; } }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 392px) {
   .left-side {
     width: 100% !important;
     position: relative !important;
+    left: 0px !important;
     margin: 0 auto !important; }
 
   .right-side {
     width: 100% !important;
     position: relative !important;
     top: 130px !important;
-    left: 0 !important;
-    /*left: 30% !important;*/ }
+    left: 0 !important; }
 
   .footer {
     position: relative !important;
-    top: -30px !important; }
-
-  .hand-tool-logo, .service {
-    position: relative;
-    right: 20px; } }
+    top: -0 !important; } }
 .header {
-  width: 90%;
-  margin: 0 auto;
-  /*text-align: center !important;*/
-  color: #4f0e1f;
-  /*border: 2px solid green;*/ }
-
-.logo-container {
-  border: 2px solid green;
-  position: relative;
-  left: 6px;
-  bottom: 58px;
-  /*text-align: center;*/
-  width: 50%;
-  margin: 0 auto;
-  font-size: 6px; }
-
-.nav-bar {
-  bottom: 21px;
-  width: 100%;
   font-weight: 900;
+  color: #4f0e1f;
+  height: 69px;
   position: relative;
-  z-index: 10;
-  margin-top: 51px; }
-
-.logo-name {
-  text-align: left;
-  /*border: 2px solid red;*/
-  position: relative;
-  top: 60px; }
-
-.co-name {
-  font-size: 10px;
-  font-weight: 900; }
-
-.header-gen-inq {
-  border: 2px solid green;
-  display: inline-block;
-  font-size: 6px; }
-
-.header-toll-free {
-  padding-left: 5px;
-  border: 2px solid red;
-  display: inline-block;
-  font-size: 6px; }
-
-.header-contact-cont {
-  top: 0;
-  text-align: right;
   margin: 0 auto;
-  width: 68%;
-  border: 2px solid yellow; }
-
-.gen-inq, .gen-toll {
-  color: #4f915b; }
-
-.gen-num, .gen-toll-num {
-  font-weight: 900; }
-
-li {
-  padding-left: 25px;
-  font-size: 6px;
-  /*border: 2px solid blue;*/
-  display: inline-flex;
-  /*margin-top: 17%;*/ }
+  width: 55%;
+  margin-bottom: 65px; }
 
 .logo {
   background-color: #4f0e1f;
   height: 29px;
   border-radius: 33px; }
 
-a {
+.co-name {
+  font-size: 12px;
+  font-weight: 900; }
+
+.slogan {
+  font-size: 8px; }
+
+.gen-inq, .gen-toll {
+  font-weight: 0;
+  color: #4f915b; }
+
+.logo-name-container {
+  position: relative;
+  left: 0;
+  display: inline-block;
+  text-align: center; }
+
+.nav-bar {
+  position: relative;
+  bottom: 16px;
+  display: inline;
+  font-weight: 900;
+  z-index: 2; }
+
+li {
   color: #4f0e1f;
-  text-decoration: none; }
-  a:hover {
+  padding-left: 25px;
+  font-size: 8px;
+  display: inline-block; }
+  li:hover {
+    cursor: pointer;
     color: #4f915b;
-    cursor: pointer; }
+    animation: menuFade 1s forwards; }
+
+.nav-container {
+  text-align: right;
+  font-size: 8px; }
+
+.header-contact-cont {
+  position: relative;
+  bottom: 87px;
+  font-size: 8px;
+  display: inline-block;
+  text-align: right;
+  width: 100%; }
+
+.header-gen-inq {
+  display: inline-block; }
+
+.header-toll-free {
+  padding-left: 5px;
+  display: inline-block; }
 
 .hero {
-  border: 1px solid #4f0e1f;
+  /*background-image: url("../img/car.png");
+  background-size: cover;
+  background-position: center;*/
+  /*border: 1px solid $burgandy;*/
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   height: 200px;
-  margin-top: -55px; }
+  margin-top: -40px; }
 
 .hero-footer {
   position: relative;
   border: 1px solid #4f0e1f;
   background-color: #4f0e1f;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   height: 100px; }
 
 .hero-footer-text {
@@ -151,10 +146,17 @@ a {
   color: #fff;
   height: 100px;
   position: relative;
-  top: 15px;
+  top: 25px;
   margin: 0 auto;
   text-align: center;
   width: 40%; }
+
+.carousel {
+  height: 210px;
+  /*border: 2px solid red;*/
+  position: absolute;
+  bottom: 100px;
+  width: 100%; }
 
 .service-contact {
   text-align: center;
@@ -174,7 +176,6 @@ a {
   position: absolute;
   left: 6%;
   top: 110px;
-  /*border: 2px solid green;*/
   width: 50%; }
 
 .right-side {
@@ -212,17 +213,17 @@ a {
   margin: 0 auto;
   position: relative;
   /*left: 25%;*/
-  width: 50%;
+  width: 35%;
   text-align: left; }
 
 .all-services {
+  background-color: #4f915b;
   margin-top: 15px;
   font-size: 7px;
   color: #fff;
   width: 70%;
   text-align: center;
-  padding: 5px;
-  background-color: #4f915b; }
+  padding: 5px; }
   .all-services:hover {
     cursor: pointer;
     color: #000; }
@@ -266,9 +267,9 @@ a {
 .footer {
   text-align: center;
   position: relative;
-  top: 80px;
+  top: 150px;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   height: 170px;
   background-color: #4f0e1f; }
 
@@ -304,18 +305,9 @@ a {
   font-size: 6px;
   color: rgba(255, 255, 250, 0.6); }
 
-html {
-  min-height: 100%;
-  width: 100%; }
-
 body {
   font-family: 'Sarala', sans-serif;
   margin: 0;
   padding: 0; }
-
-.container {
-  margin: 0 auto;
-  width: 55%;
-  /*border: 2px solid green;*/ }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,79 +1,11 @@
 .header{
-	width: 90%;
-	margin: 0 auto;
-	/*text-align: center !important;*/
+	font-weight: 900;
 	color: $burgandy;
-	/*border: 2px solid green;*/
-
-}
-
-.logo-container{
-	border: 2px solid green;
+	height: 69px;
 	position: relative;
-	left: 6px;
-	bottom: 58px;
-	/*text-align: center;*/
-	width: 50%;
 	margin: 0 auto;
-	font-size: $header-font-size;
-}
-
-.nav-bar{
-	bottom: 21px;
-	width: 100%;
-	font-weight: 900;
-	position: relative;
-	z-index: 10;
-	margin-top:51px;
-}
-
-.logo-name {
-	text-align: left;
-	/*border: 2px solid red;*/
-	position: relative;
-	top: 60px;
-}
-
-.co-name{
-	font-size: 10px;
-	font-weight: 900;
-}
-
-.header-gen-inq{
-	border: 2px solid green;
-	display: inline-block;
-	font-size: $header-font-size;
-}
-
-.header-toll-free{
-	padding-left: 5px;
-	border: 2px solid red;
-	display: inline-block;
-	font-size: $header-font-size;
-}
-
-.header-contact-cont{
-	top: 0;
-	text-align: right;
-	margin: 0 auto;
-	width: 68%;
-	border: 2px solid yellow;
-}
-
-.gen-inq, .gen-toll{
-	color: $green;
-}
-
-.gen-num, .gen-toll-num{
-	font-weight: 900;
-}
-
-li{
-	padding-left: 25px;
-	font-size: $header-font-size;
-	/*border: 2px solid blue;*/
-	display: inline-flex;
-	/*margin-top: 17%;*/
+	width: 55%;
+	margin-bottom: 65px;
 }
 
 .logo{
@@ -82,27 +14,70 @@ li{
 	border-radius: 33px;
 }
 
-a{
+.co-name{
+	font-size: 12px;
+	font-weight: 900;
+}
+
+.slogan{
+	font-size: 8px;
+}
+
+.gen-inq,.gen-toll{
+	font-weight: 0;
+	color: $green;
+}
+
+.logo-name-container{
+	position: relative;
+	left: 0;
+	display: inline-block;
+	text-align: center;
+}
+
+.nav-bar{
+	position: relative;
+	bottom: 16px;
+	display: inline;
+	font-weight: 900;
+	z-index: 2;
+}
+
+li{
 	color: $burgandy;
-	text-decoration: none;
+	padding-left: 25px;
+	font-size: $header-font-size;
+	display: inline-block;
 	&:hover{
-		color: $green;
 		cursor: pointer;
+		color: $green;
+		animation: menuFade 1s forwards;
 	}
-} 
+}
 
 
+.nav-container{
+	text-align: right;
+	font-size: $header-font-size;
+}
 
+.header-contact-cont{
+	position: relative;
+	bottom: 87px;
+	font-size: $header-font-size;
+	display: inline-block;
+	text-align: right;
+	width: 100%;
+}
 
+.header-gen-inq{
+	display: inline-block;
+}
 
-
-
-
-
-
-
-
-
+.header-toll-free{
+	padding-left: 5px;
+	display: inline-block;
+}
 
 
 

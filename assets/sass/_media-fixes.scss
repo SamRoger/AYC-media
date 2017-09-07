@@ -12,25 +12,44 @@
 	
 }
 
-@media only screen and (max-width: 677px) {
-    .nav-bar{
-    	text-align: left !important;
-    	position: relative;
-    	bottom: 31px !important;
-		text-align: center;
+@media only screen and (max-width: 700px) {
+    .header{
+    	width: 70% !important;
+		height: 120px !important;
+    }
+
+    .nav-container{
     }
 	
 }
-/*
-@media only screen and (max-width: 641px) {
-    .nav-bar{
-    	text-align: left !important;
-    	position: relative;
 
-		text-align: center;
+@media only screen and (max-width: 430px) {
+	.logo-name-container{
+		display: block !important;
+	}
+	.nav-bar{
+		position: relative !important;
+		top: 20px !important;
+		right: 18px;
+	}
+
+	
+}
+
+@media only screen and (max-width: 550px) {
+    .header{
+		width: 90% !important;
     }
 	
-}*/
+}
+	
+
+@media only screen and (max-width: 1028px) {
+    .align-right2{
+		position: relative !important;
+    }
+	
+}
 
 @media only screen and (max-width: 1156px) {
 	.footer{
@@ -56,39 +75,26 @@
 	}
 }
 
-@media only screen and (max-width: 984px) {
-	.right-side{
-
-	}
-}
-
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 392px) {
 	.left-side{
 		width: 100% !important;
 		position: relative !important;
+		left: 0px !important;
 		margin: 0 auto !important;
 	}
+
 	.right-side{
 		width: 100% !important;
 		position: relative !important;
 		top: 130px !important;
 		left: 0 !important;
-		
-		/*left: 30% !important;*/
 	}
 
 	.footer{
 		position: relative !important;
-		top: -30px !important;
-	}
-
-	.hand-tool-logo,.service{
-		position: relative;
-		right: 20px;
+		top: -0 !important;
 	}
 }
-
-
 
 
 
