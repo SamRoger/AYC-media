@@ -1,7 +1,6 @@
 @media only screen and (max-width: 1199px) {
     .header-contact-cont{
 	width: 100% !important;
-	/*border: 2px solid yellow;*/
 	}
 }
 
@@ -24,6 +23,10 @@
 }
 
 @media only screen and (max-width: 430px) {
+	.header-contact-cont{
+		margin-top: 3px;
+	}
+
 	.logo-name-container{
 		display: block !important;
 	}
@@ -93,6 +96,30 @@
 	.footer{
 		position: relative !important;
 		top: -0 !important;
+	}
+}
+/*
+@media only screen and (min-width: 375px) {
+
+	html, body{
+		min-height: 100% !important;
+	}
+
+	.container{
+		border: 2px solid green;
+		min-height: 667px !important;
+	}
+}*/
+
+@media only screen and (max-width: 594px) {
+	.hero-footer-text{
+		top: 10px !important;
+	}
+}
+
+@media only screen and (max-width: 413px) {
+	.hero-footer-text{
+		top: 0px !important;
 	}
 }
 

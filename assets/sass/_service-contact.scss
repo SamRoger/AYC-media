@@ -1,6 +1,5 @@
 .service-contact{
 	text-align: center;
-	/*border: 2px solid red;*/
 	width: 100%;
 	left: 0;
 	margin: 0 auto;
@@ -26,7 +25,6 @@
 	position: relative;
 	top: 110px;
 	left: 44%;
-	/*border: 2px solid blue;*/
 	width: 50%;
 }
 
@@ -42,7 +40,6 @@
 	color: $green;
 	margin-top: 20px;
 	position: relative;
-	/*left: 34%;*/
 	text-align: left;
 	font-size: $contact-font-size;
 }
@@ -58,10 +55,8 @@
 }
 
 .service-align{
-	/*border: 2px solid blue;*/
 	margin: 0 auto;
 	position: relative;
-	/*left: 25%;*/
 	width: 35%;
 	text-align: left;
 }
