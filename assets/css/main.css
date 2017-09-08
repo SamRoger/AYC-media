@@ -3,61 +3,52 @@
     color: #4f0e1f; }
   to {
     color: #4f915b; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 @media only screen and (max-width: 1199px) {
   .header-contact-cont {
     width: 100% !important; } }
 @media only screen and (max-width: 1061px) {
   .nav-bar {
     text-align: center; } }
-@media only screen and (max-width: 700px) {
-  .header {
-    width: 70% !important;
-    height: 120px !important; } }
-@media only screen and (max-width: 430px) {
-  .header-contact-cont {
-    margin-top: 3px; }
-
-  .logo-name-container {
-    display: block !important; }
-
+@media only screen and (max-width: 800px) {
   .nav-bar {
-    position: relative !important;
-    top: 20px !important;
-    right: 18px; } }
-@media only screen and (max-width: 550px) {
-  .header {
-    width: 90% !important; } }
-@media only screen and (max-width: 1028px) {
-  .align-right2 {
-    position: relative !important; } }
-@media only screen and (max-width: 1156px) {
-  .footer {
-    margin-top: 20px !important; } }
-@media only screen and (max-width: 970px) {
-  .footer {
-    margin-top: 50px !important; } }
-@media only screen and (max-width: 935px) {
-  .footer {
-    margin-top: 80px !important; } }
-@media only screen and (max-width: 829px) {
-  .footer {
-    margin-top: 110px !important; } }
-@media only screen and (max-width: 392px) {
+    display: none !important; }
+
+  .burger-container {
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    z-index: 10;
+    background-position: center;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/burger-menu.png); } }
+@media only screen and (max-width: 652px) {
   .left-side {
-    width: 100% !important;
+    width: 60% !important; } }
+@media only screen and (max-width: 550px) {
+  .left-side {
+    font-size: 10px !important;
     position: relative !important;
-    left: 0px !important;
-    margin: 0 auto !important; }
+    left: 0% !important;
+    top: 110px !important;
+    width: 100% !important; }
 
   .right-side {
-    width: 100% !important;
+    font-size: 10px !important;
     position: relative !important;
-    top: 130px !important;
-    left: 0 !important; }
+    top: 120px !important;
+    left: 0 !important;
+    width: 100% !important; }
 
-  .footer {
-    position: relative !important;
-    top: -0 !important; } }
+  .name2 {
+    display: inline-block !important;
+    width: 65% !important; } }
 .header {
   font-weight: 900;
   color: #4f0e1f;
@@ -91,7 +82,7 @@
 
 .nav-bar {
   position: relative;
-  bottom: 16px;
+  bottom: 17px;
   display: inline;
   font-weight: 900;
   z-index: 2;
@@ -112,12 +103,13 @@ li {
   font-size: 9px; }
 
 .header-contact-cont {
-  position: relative;
-  bottom: 87px;
+  font-size: 9px;
+  position: absolute;
+  right: 0px;
+  bottom: 41px;
   font-size: 9px;
   display: inline-block;
-  text-align: right;
-  width: 100%; }
+  text-align: right; }
 
 .header-gen-inq {
   display: inline-block; }
@@ -127,7 +119,9 @@ li {
   display: inline-block; }
 
 .hero {
-  margin: 0 auto;
+  position: relative;
+  top: 175px;
+  text-align: center;
   width: 100%;
   height: 200px;
   margin-bottom: 25px; }
@@ -178,6 +172,7 @@ li {
   font-size: 13px; }
 
 .button1 {
+  margin-top: 20px;
   font-size: 10px;
   color: #fff;
   padding: 3px;
@@ -186,6 +181,55 @@ li {
   .button1:hover {
     cursor: pointer;
     color: #4f0e1f; }
+  .button1:active {
+    background-color: #4f0e1f;
+    color: #fff; }
+
+.dots {
+  width: 10px;
+  height: 10px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/empty-circle.png");
+  position: relative;
+  z-index: 10;
+  display: inline-block; }
+  .dots:hover {
+    cursor: pointer; }
+
+.dots {
+  width: 10px;
+  height: 10px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/empty-circle.png");
+  position: relative;
+  z-index: 10;
+  display: inline-block; }
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #4f0e1f;
+  position: relative;
+  z-index: 10;
+  border-radius: 10px;
+  display: inline-block;
+  /*background-color: $burgandy;*/
+  /*	background-position: center;
+  	background-size: cover;
+  
+  	position: relative;
+  	z-index: 10;
+  	display: inline-block;
+  	&:hover{
+  		cursor: pointer;
+  	}*/ }
+  .dot:hover {
+    cursor: pointer; }
+
+.hero-selector {
+  background-color: #4f0e1f; }
 
 .service-contact {
   text-align: center;
@@ -262,6 +306,11 @@ li {
   color: #4f915b;
   display: inline; }
 
+.name2 {
+  font-size: 15px;
+  color: #4f915b;
+  display: inline; }
+
 .align-right1 {
   display: inline-block;
   text-align: left;
@@ -329,9 +378,18 @@ li {
   font-size: 6px;
   color: rgba(255, 255, 250, 0.6); }
 
+.sitemap:hover {
+  cursor: pointer;
+  color: #4f915b;
+  animation: menuFade 1s forwards; }
+
 body {
   font-family: 'Sarala', sans-serif;
   margin: 0;
   padding: 0; }
+
+.container, body {
+  position: relative;
+  z-index: -100; }
 
 /*# sourceMappingURL=main.css.map */

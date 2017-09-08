@@ -2,3 +2,8 @@
 	from { color: $burgandy;}
 	to { color: $green;}
 }
+
+@keyframes fadeIn{
+	from { opacity: 0;}
+	to { opacity: 1;}
+}

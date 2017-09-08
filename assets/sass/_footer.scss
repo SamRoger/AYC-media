@@ -47,7 +47,13 @@
 	color: rgba(255,255,250,.6);
 }
 
-
+.sitemap{
+	&:hover{
+		cursor: pointer;
+		color: $green;
+		animation: menuFade 1s forwards;
+	}
+}
 
 
 

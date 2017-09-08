@@ -37,7 +37,7 @@
 
 .nav-bar{
 	position: relative;
-	bottom: 16px;
+	bottom: 17px;
 	display: inline;
 	font-weight: 900;
 	z-index: 2;
@@ -63,12 +63,13 @@ li{
 }
 
 .header-contact-cont{
-	position: relative;
-	bottom: 87px;
 	font-size: $header-font-size;
-	display: inline-block;
-	text-align: right;
-	width: 100%;
+	position: absolute;
+    right: 0px;
+    bottom: 41px;
+    font-size: 9px;
+    display: inline-block;
+    text-align: right;
 }
 
 .header-gen-inq{

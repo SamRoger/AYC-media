@@ -1,5 +1,7 @@
 .hero{
-	margin: 0 auto;
+	position: relative;
+	top: 175px;
+	text-align: center;
 	width: 100%;
 	height: 200px;
 	margin-bottom: 25px;
@@ -58,6 +60,7 @@
 }
 
 .button1{
+	margin-top: 20px;
 	font-size: 10px;
 	color: #fff;
 	padding: 3px;
@@ -67,10 +70,63 @@
 		cursor: pointer;
 		color: $burgandy;
 	}
+	&:active{
+		background-color: $burgandy;
+		color: #fff;
+	}
 }
 
+.dots{
+	width: 10px;
+	height: 10px;
+	background-position: center;
+	background-size: cover;
+	background-image: url("../img/empty-circle.png");
+	position: relative;
+	z-index: 10;
+	display: inline-block;
+	&:hover{
+		cursor: pointer;
+	}
+}
 
+.dots{
+	width: 10px;
+	height: 10px;
+	background-position: center;
+	background-size: cover;
+	background-image: url("../img/empty-circle.png");
+	position: relative;
+	z-index: 10;
+	display: inline-block;
+}
 
+.dot{
+	width: 10px;
+	height: 10px;
+	border: 1px solid $burgandy;
+	position: relative;
+	z-index: 10;
+	border-radius: 10px;
+	display: inline-block;
+	&:hover{
+		cursor: pointer;
+	}
+	/*background-color: $burgandy;*/
+/*	background-position: center;
+	background-size: cover;
+
+	position: relative;
+	z-index: 10;
+	display: inline-block;
+	&:hover{
+		cursor: pointer;
+	}*/
+}
+
+.hero-selector{
+	background-color: $burgandy;
+}
 
 
 
