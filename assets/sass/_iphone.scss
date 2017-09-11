@@ -1,7 +1,37 @@
-/*@media only screen 
-and (max-device-width : 375px) 
- {
-	body{
-		background-color: teal !important;
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+	html,body{
+		/*background-color: teal;*/
+
+		min-height: 100%;
 	}
-}*/
+	.footer{
+		top: 865px !important;
+	}
+	.left-side{
+		position: relative !important;
+		width: 94% !important;
+	}
+	.burger-container{ /* icon */
+		position: absolute;
+		z-index: 1000;
+		bottom: 0;
+		right: 0;
+		z-index: 10;
+		background-position: center;
+		background-size: cover;
+		width: 60px;
+		height: 60px;
+		background-image: url(../img/burger-menu.png);
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	.nav-bar{
+		display: none !important;
+	}
+	.header-contact-cont{
+		display: none !important;
+	}
+}
