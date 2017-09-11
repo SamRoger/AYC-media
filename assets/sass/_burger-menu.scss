@@ -1,0 +1,103 @@
+@media only screen and (max-width: 800px) {
+	.nav-bar{
+		display: none !important;
+	}
+	.header-contact-cont{
+		display: none !important;
+	}
+	.burger-container{ /* icon */
+		position: absolute;
+		z-index: 1000;
+		bottom: 0;
+		right: 0;
+		z-index: 10;
+		background-position: center;
+		background-size: cover;
+		width: 44px;
+		height: 44px;
+		background-image: url(../img/burger-menu.png);
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	.burger-menu-container{ /* burger menu container */
+		background-color: rgba(236, 239, 241, 1) !important;
+		position: absolute;
+		top: 2%;
+		height: 180px;
+		box-shadow: 1px 1px 2px black;
+		z-index: 100;
+		width: 100%;
+	}
+	.header-contact-cont2{
+		margin-top: -17px;
+		position: relative;
+		bottom: 103px;
+		font-size: $header-font-size;
+	    text-align: center;
+	}
+	.burger-menu{ /*new nav inside burger menu*/
+		position: relative;
+		top: 24%;
+		margin: 0 auto;
+		width: 9%;
+		text-align: center;
+	}
+	
+} /*closes media 800px*/
+
+@media only screen and (max-width: 652px) {
+	.burger-menu{
+		width: 11% !important;
+	}
+}
+
+@media only screen and (max-width: 543px) {
+	.burger-menu{
+		width: 15% !important;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.burger-menu,
+	.burger-menu-container,
+	.header-gen-inq2{
+		display: none !important;
+	}
+}
+
+
+.burger-menu,
+.burger-menu-container,
+.header-gen-inq2{
+	display: none;
+}
+
+ul{ /*this is a fix, not sure where this padding-left is*/
+	padding-left: 0px !important;
+}
+
+.close{
+	position: absolute;
+	right: 0;
+	width: 25px;
+	height: 25px;
+	background-position: center;
+	background-size: cover;
+	background-image: url("../img/close.png");
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

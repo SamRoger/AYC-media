@@ -30,6 +30,7 @@
 
 .logo-name-container{
 	position: relative;
+	top: 2px;
 	left: 0;
 	display: inline-block;
 	text-align: center;
@@ -46,7 +47,6 @@
 
 li{
 	color: $burgandy;
-	padding-left: 25px;
 	font-size: $header-font-size;
 	display: inline-block;
 	&:hover{
@@ -56,6 +56,9 @@ li{
 	}
 }
 
+.menu-li{
+	padding-left: 25px;
+}
 
 .nav-container{
 	text-align: right;

@@ -11,29 +11,6 @@
 	
 }
 
-@media only screen and (max-width: 800px) {
-	.nav-bar{
-		display: none !important;
-	}
-	.burger-container{
-		position: absolute;
-		bottom: 6px;
-		right: 0;
-		z-index: 10;
-		background-position: center;
-		background-size: cover;
-		width: 24px;
-		height: 24px;
-		background-image: url(../img/burger-menu.png);
-	}
-	.burger-menu{
-		
-	}
-}
-
-@media only screen and (max-width: 1028px) {
-	}
-
 @media only screen and (max-width: 652px) {
 	.left-side{
 		width: 60% !important;
@@ -58,6 +35,13 @@
 	.name2{
 		display: inline-block !important;
 	    width: 65% !important;
+	}
+	.hero-footer-text{
+		left: 18% !important;
+		width: 63% !important;
+	}
+	.header{
+		width: 90% !important;
 	}
 }
 

@@ -1,26 +1,18 @@
-
-
-
-
 var slider  = document.getElementsByClassName("slider")[0];
 var imageText = document.getElementsByClassName("image-text")[0];
 // ---------------------------------------------------------------
-var ImageOne = "<div class='image-one'>" +  //i know this isn't always the most practical, but i wanted to show this fun feature
-
+var ImageOne = "<div class='image-one'>" +  //i know this isn't always the most practical, but i wanted to show this for fun
 					"<div class='image-header'>" + 
 						'Good Business Starts Here' +  
 					"</div>" + 
-
 					"<div class='lorem1'>" + 
 						'Lorem ipsum dolor sit amet, Lorem ipsum' + 
 					"<div>" +
-
 					"<div class='button1'>" + 
 						'MEET YOUR TEAM' + 
 					"</div>" +
-
 				"</div>"
-
+// ---------------------------------------------------------------
 var ImageTwo = 'Image Three' //different examples
 var ImageThree = '<div class="image-two">Image Two</div>' //different examples
 // ---------------------------------------------------------------
@@ -55,44 +47,41 @@ window.onload = function(){ //added this so slider wasn't empty onload\
 // ---------------------------------------------------------------
 setInterval(function() {
 	if (currentImage === 2) {
-		currentImage = -1 //added as fix so that every index[] of image showed
+		currentImage = -1 //added as fix so that every index[] of image showed/i have an issue somewhere else
  	}
 	slider.src = myImageslider.images[currentImage +=1].fileName; //this allowes me to add file path on a loop
 	imageText.innerHTML = myImageslider.images[currentImage].imageName;
-	slider.style.animation = 'fadeIn 3.5s infinite'; //i know if this keeps going long enough it would match up, i could've used snippet of code or frame work, but I wanted to write the whole slider.
+	slider.style.animation = 'fadeIn 3.5s infinite'; //i know if this keeps going long enough it would match up, i could've used snippet of code or frame work, but I wanted to write the whole slider OOJS.
+// ---------------------------------------------------------------
+var dot = document.getElementsByClassName("dot"); //no "[0]"" so i capture all "dots"
+	for (let j = 0; j < dot.length; j++) { //in case I use "i" again by using "let" this "i" will remain within the scope of this block
+		dot[currentImage].classList.add("hero-selector")
+	}
 },3500);
 // ---------------------------------------------------------------
 var dot = document.getElementsByClassName("dot"); //no "[0]"" so i capture all "dots"
-var dot1 = document.getElementsByClassName("dot1")[0]; //no "[0]"" so i capture all "dots"
-clicked = false
 	for (let i = 0; i < dot.length; i++) { //in case I use "i" again by using "let" this "i" will remain within the scope of this block
 		dot[i].addEventListener("click", function(){
 				dot[i].classList.toggle("hero-selector")
 		})
 	}
 // ---------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var burgerContainer = document.getElementsByClassName("burger-container")[0];
+var burgerMenuContainer = document.getElementsByClassName("burger-menu-container")[0];
+var burgerMenu = document.getElementsByClassName("burger-menu")[0];
+var headerGenInq2 = document.getElementsByClassName("header-gen-inq2")[0];
+var close = document.getElementsByClassName("close")[0];
+// ---------------------------------------------------------------
+burgerContainer.addEventListener("click", function(){
+	burgerMenuContainer.style.display = "block";
+	burgerMenu.style.display = "block";
+	headerGenInq2.style.display = "block";
+})
+// ---------------------------------------------------------------
+close.addEventListener("click", function(){
+	burgerMenuContainer.style.display = "none"
+})
+// ---------------------------------------------------------------
 
 
 

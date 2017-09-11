@@ -76,31 +76,6 @@
 	}
 }
 
-.dots{
-	width: 10px;
-	height: 10px;
-	background-position: center;
-	background-size: cover;
-	background-image: url("../img/empty-circle.png");
-	position: relative;
-	z-index: 10;
-	display: inline-block;
-	&:hover{
-		cursor: pointer;
-	}
-}
-
-.dots{
-	width: 10px;
-	height: 10px;
-	background-position: center;
-	background-size: cover;
-	background-image: url("../img/empty-circle.png");
-	position: relative;
-	z-index: 10;
-	display: inline-block;
-}
-
 .dot{
 	width: 10px;
 	height: 10px;
