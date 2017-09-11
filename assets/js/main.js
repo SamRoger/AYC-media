@@ -47,7 +47,7 @@ window.onload = function(){ //added this so slider wasn't empty onload\
 	dot2.classList.remove("hero-selector")
 }
 // ---------------------------------------------------------------
-setInterval(function() {
+// setInterval(function() {
 var dot = document.getElementsByClassName("dot"); 
 	if (currentImage === 2) {
 		currentImage = -1 //added as fix so that every index[] of image showed/i have an issue somewhere else
@@ -74,7 +74,7 @@ var dot = document.getElementsByClassName("dot");
 			}
 		}
 	heroSelector();
-},3500);
+// },3500);
 // ---------------------------------------------------------------
 var dot = document.getElementsByClassName("dot");
 var slider  = document.getElementsByClassName("slider")[0];

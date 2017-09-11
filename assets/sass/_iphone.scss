@@ -3,15 +3,21 @@ and (min-device-width : 375px)
 and (max-device-width : 667px) { 
 	html,body{
 		/*background-color: teal;*/
-
 		min-height: 100%;
 	}
+	.nav-bar,
+	.header-contact-cont,
+	.logo{
+		display: none !important;
+	}
 	.footer{
-		top: 865px !important;
+		top: 632px !important;
 	}
 	.left-side{
 		position: relative !important;
+		top: 300px !important;
 		width: 94% !important;
+
 	}
 	.burger-container{ /* icon */
 		position: absolute;
@@ -21,17 +27,70 @@ and (max-device-width : 667px) {
 		z-index: 10;
 		background-position: center;
 		background-size: cover;
-		width: 60px;
-		height: 60px;
+		width: 120px;
+		height: 120px;
 		background-image: url(../img/burger-menu.png);
 		&:hover{
 			cursor: pointer;
 		}
 	}
-	.nav-bar{
-		display: none !important;
+
+	.header-contact-cont2{
+		margin-top: -17px;
+		position: relative;
+		bottom: 103px;
+		font-size: $header-font-size;
+	    text-align: center;
 	}
-	.header-contact-cont{
-		display: none !important;
+	.burger-menu{ /*new nav inside burger menu*/
+		position: relative;
+		top: 24%;
+		margin: 0 auto;
+		width: 9%;
+		text-align: center;
+	}
+
+	.mobileLogo{
+		position: relative;
+		left: 23%;
+		width: 75px;
+		height: 75px;
+		background-size: cover;
+		background-position: center;
+		background-color: $burgandy;
+		border-radius: 40px;
+		background-image: url("../img/hands.png");
+	}
+	
+	.header{
+		height: 150px !important;
+	}
+	.co-name{
+		font-size: 35px !important;
+	}
+	.slogan{
+		font-size: 16px !important;
+	}
+	.hero-footer{
+		height: 130px !important;
+		top: 190px !important;
+	}
+	.slider{
+		height: 440px !important;
+	}
+	.hero-footer-text{
+		top: 51px !important;
+	}
+	.myElement{
+		top: 400px !important;
+	}
+	.image-header{
+		font-size: 40px !important;
+	}
+	.lorem1{
+		font-size: 20px !important;
+	}
+	.button1{
+		font-size: 20px !important;
 	}
 }
