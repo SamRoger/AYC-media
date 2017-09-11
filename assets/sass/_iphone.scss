@@ -11,9 +11,10 @@ and (max-device-width : 667px) {
 		display: none !important;
 	}
 	.footer{
-		top: 632px !important;
+		top: 253px !important;
 	}
 	.left-side{
+		font-size: 20px !important;
 		position: relative !important;
 		top: 300px !important;
 		width: 94% !important;
@@ -92,5 +93,17 @@ and (max-device-width : 667px) {
 	}
 	.button1{
 		font-size: 20px !important;
+	}
+	.hand-tool-logo,
+	.airplane-logo{
+		width: 69px !important;
+	}
+	.right-side{
+		top: 317px !important;
+		font-size: 20px !important;
+		left: 29% !important;
+	}
+	.align-right2{
+		left: 4px !important;
 	}
 }
