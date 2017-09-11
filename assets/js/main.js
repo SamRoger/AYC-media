@@ -55,28 +55,54 @@ var dot = document.getElementsByClassName("dot");
 	slider.src = myImageslider.images[currentImage +=1].fileName; //this allowes me to add file path on a loop
 	imageText.innerHTML = myImageslider.images[currentImage].imageName;
 	slider.style.animation = 'fadeIn 3.5s infinite'; //i know if this keeps going long enough it would match up, i could've used snippet of code or frame work, but I wanted to write the whole slider OOJS.
-		if (dot1.classList.contains("hero-selector")){
-			dot1.classList.remove("hero-selector")
-			dot2.classList.remove("hero-selector")
-			dot3.classList.remove("hero-selector")
-			dot2.classList.add("hero-selector")
-		} else if(dot2.classList.contains("hero-selector")){
-			dot2.classList.remove("hero-selector")
-			dot1.classList.remove("hero-selector")
-			dot3.classList.remove("hero-selector")
-			dot3.classList.add("hero-selector")
-		} else if(dot3.classList.contains("hero-selector")){
-			dot3.classList.remove("hero-selector")
-			dot2.classList.remove("hero-selector")
-			dot1.classList.remove("hero-selector")
-			dot1.classList.add("hero-selector")
+		function heroSelector(){
+			if (dot1.classList.contains("hero-selector")){
+				dot1.classList.remove("hero-selector")
+				dot2.classList.remove("hero-selector")
+				dot3.classList.remove("hero-selector")
+				dot2.classList.add("hero-selector")
+			} else if (dot2.classList.contains("hero-selector")){
+				dot2.classList.remove("hero-selector")
+				dot1.classList.remove("hero-selector")
+				dot3.classList.remove("hero-selector")
+				dot3.classList.add("hero-selector")
+			} else if (dot3.classList.contains("hero-selector")){
+				dot3.classList.remove("hero-selector")
+				dot2.classList.remove("hero-selector")
+				dot1.classList.remove("hero-selector")
+				dot1.classList.add("hero-selector")
+			}
 		}
+	heroSelector();
 },3500);
 // ---------------------------------------------------------------
-for (let i = 0; i < dot.length; i++) {
-var dot = document.getElementsByClassName("dot"); 
-	dot[i].src = myImageslider.images[currentImage +=1].fileName;
-}
+var dot = document.getElementsByClassName("dot");
+var slider  = document.getElementsByClassName("slider")[0];
+
+dot1.addEventListener("click", function(){
+	slider.src = "assets/img/image2.jpg"
+	dot1.classList.add("hero-selector")
+	if (dot2.classList.contains("hero-selector") || dot3.classList.contains("hero-selector")){
+		dot2.classList.remove("hero-selector")
+		dot3.classList.remove("hero-selector")
+	}
+})
+dot2.addEventListener("click", function(){
+	slider.src = "assets/img/image1.jpg"
+	dot2.classList.add("hero-selector")
+	if (dot1.classList.contains("hero-selector") || dot3.classList.contains("hero-selector")){
+		dot1.classList.remove("hero-selector")
+		dot3.classList.remove("hero-selector")
+	}
+})
+dot3.addEventListener("click", function(){
+	slider.src = "assets/img/image3.jpg"
+	dot3.classList.add("hero-selector")
+	if (dot1.classList.contains("hero-selector") || dot2.classList.contains("hero-selector")){
+		dot1.classList.remove("hero-selector")
+		dot2.classList.remove("hero-selector")
+	}
+})
 // ---------------------------------------------------------------
 var burgerContainer = document.getElementsByClassName("burger-container")[0];
 var burgerMenuContainer = document.getElementsByClassName("burger-menu-container")[0];
