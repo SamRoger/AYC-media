@@ -18,6 +18,20 @@
     top: 300px !important;
     width: 100% !important; }
 
+  .burger-menu-container {
+    /* burger menu container */
+    background-color: #eceff1 !important;
+    position: absolute;
+    top: 2%;
+    height: 180px;
+    box-shadow: 1px 1px 2px black;
+    z-index: 100;
+    width: 100%; }
+
+  .close {
+    width: 60px !important;
+    height: 60px !important; }
+
   .burger-container {
     /* icon */
     position: absolute;
@@ -42,10 +56,11 @@
 
   .burger-menu {
     /*new nav inside burger menu*/
-    position: relative;
-    top: 24%;
+    position: relative !important;
+    left: -15% !important;
+    top: -6% !important;
     margin: 0 auto;
-    width: 9%;
+    width: 12%;
     text-align: center; }
 
   .mobileLogo {
@@ -100,7 +115,16 @@
     left: 29% !important; }
 
   .align-right2 {
-    left: 4px !important; } }
+    left: 4px !important; }
+
+  .burger-menu-li {
+    font-size: 18px !important; }
+
+  .header-contact-cont2 {
+    bottom: 159px !important;
+    font-size: 20px !important;
+    display: grid !important;
+    left: 115px !important; } }
 @media only screen and (max-width: 800px) {
   .nav-bar {
     display: none !important; }
