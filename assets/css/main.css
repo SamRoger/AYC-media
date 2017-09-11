@@ -12,10 +12,11 @@
     top: 253px !important; }
 
   .left-side {
+    left: 0 !important;
     font-size: 20px !important;
     position: relative !important;
     top: 300px !important;
-    width: 94% !important; }
+    width: 100% !important; }
 
   .burger-container {
     /* icon */
