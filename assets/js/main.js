@@ -43,28 +43,40 @@ var dot3 = document.getElementsByClassName("dot3")[0];
 window.onload = function(){ //added this so slider wasn't empty onload\
 	slider.src = myImageslider.images[0].fileName;
 	imageText.innerHTML = myImageslider.images[0].imageName;
+	dot1.classList.add("hero-selector")
+	dot2.classList.remove("hero-selector")
 }
 // ---------------------------------------------------------------
 setInterval(function() {
+var dot = document.getElementsByClassName("dot"); 
 	if (currentImage === 2) {
 		currentImage = -1 //added as fix so that every index[] of image showed/i have an issue somewhere else
  	}
 	slider.src = myImageslider.images[currentImage +=1].fileName; //this allowes me to add file path on a loop
 	imageText.innerHTML = myImageslider.images[currentImage].imageName;
 	slider.style.animation = 'fadeIn 3.5s infinite'; //i know if this keeps going long enough it would match up, i could've used snippet of code or frame work, but I wanted to write the whole slider OOJS.
-// ---------------------------------------------------------------
-var dot = document.getElementsByClassName("dot"); //no "[0]"" so i capture all "dots"
-	for (let j = 0; j < dot.length; j++) { //in case I use "i" again by using "let" this "i" will remain within the scope of this block
-		dot[currentImage].classList.add("hero-selector")
-	}
+		if (dot1.classList.contains("hero-selector")){
+			dot1.classList.remove("hero-selector")
+			dot2.classList.remove("hero-selector")
+			dot3.classList.remove("hero-selector")
+			dot2.classList.add("hero-selector")
+		} else if(dot2.classList.contains("hero-selector")){
+			dot2.classList.remove("hero-selector")
+			dot1.classList.remove("hero-selector")
+			dot3.classList.remove("hero-selector")
+			dot3.classList.add("hero-selector")
+		} else if(dot3.classList.contains("hero-selector")){
+			dot3.classList.remove("hero-selector")
+			dot2.classList.remove("hero-selector")
+			dot1.classList.remove("hero-selector")
+			dot1.classList.add("hero-selector")
+		}
 },3500);
 // ---------------------------------------------------------------
-var dot = document.getElementsByClassName("dot"); //no "[0]"" so i capture all "dots"
-	for (let i = 0; i < dot.length; i++) { //in case I use "i" again by using "let" this "i" will remain within the scope of this block
-		dot[i].addEventListener("click", function(){
-				dot[i].classList.toggle("hero-selector")
-		})
-	}
+for (let i = 0; i < dot.length; i++) {
+var dot = document.getElementsByClassName("dot"); 
+	dot[i].src = myImageslider.images[currentImage +=1].fileName;
+}
 // ---------------------------------------------------------------
 var burgerContainer = document.getElementsByClassName("burger-container")[0];
 var burgerMenuContainer = document.getElementsByClassName("burger-menu-container")[0];
@@ -83,7 +95,6 @@ close.addEventListener("click", function(){
 	setTimeout(function(){
 		burgerMenuContainer.style.display = "none"
 	},1000)
-
 })
 // ---------------------------------------------------------------
 
