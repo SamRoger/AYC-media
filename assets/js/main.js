@@ -74,12 +74,16 @@ var close = document.getElementsByClassName("close")[0];
 // ---------------------------------------------------------------
 burgerContainer.addEventListener("click", function(){
 	burgerMenuContainer.style.display = "block";
+	burgerMenuContainer.style.animation = "burgerMenuFadeIn 1s";
 	burgerMenu.style.display = "block";
-	headerGenInq2.style.display = "block";
 })
 // ---------------------------------------------------------------
 close.addEventListener("click", function(){
-	burgerMenuContainer.style.display = "none"
+	burgerMenuContainer.style.animation = "burgerMenuFadeOut 1s";
+	setTimeout(function(){
+		burgerMenuContainer.style.display = "none"
+	},1000)
+
 })
 // ---------------------------------------------------------------
 
