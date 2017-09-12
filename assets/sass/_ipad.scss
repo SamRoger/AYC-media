@@ -1,0 +1,118 @@
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	.nav-bar{
+		display: none !important;
+	}
+	.header-contact-cont{
+		display: none !important;
+	}
+	.burger-container{ /* icon */
+		position: absolute;
+		z-index: 1000;
+		bottom: 0;
+		right: 0;
+		z-index: 10;
+		background-position: center;
+		background-size: cover;
+		width: 44px;
+		height: 44px;
+		background-image: url(../img/burger-menu.png);
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	.burger-menu-container{ /* burger menu container */
+		background-color: rgba(236, 239, 241, 1) !important;
+		position: absolute;
+		top: 2%;
+		height: 180px;
+		box-shadow: 1px 1px 2px black;
+		z-index: 100;
+		width: 100%;
+	}
+	.header-contact-cont2{
+		margin-top: -17px;
+		position: relative;
+		bottom: 103px;
+		font-size: $header-font-size;
+	    text-align: center;
+	}
+	.burger-menu{ /*new nav inside burger menu*/
+		position: relative;
+		top: 24%;
+		margin: 0 auto;
+		width: 9%;
+		text-align: center;
+	}
+	.service-header1,
+	.service-header2{
+		font-size: 30px !important;
+	}
+	.name2,
+	.name{
+		font-size: 30px !important;
+	}
+	.footer{
+		top: 93px !important;
+	}
+	.service-align{
+		font-size: 23px;
+		width: 55% !important;
+	}
+	.align-right1{
+		font-size: 23px;
+	}
+	.align-right2{
+		font-size: 23px !important;
+		margin-top: 100px !important;
+	}
+	.service,
+	.contact-us{
+		font-size: 23px !important;
+	}
+	.ipad-hand-tool{
+		position: relative;
+		left: 40%;
+		transform: rotate(-90deg);
+		width: 100px;
+		height: 100px;
+		background-size: cover;
+		background-position: center;
+		background-image: url("../img/hold-tool.png");
+	}
+	.ipad-airplane-logo{
+		position: relative;
+		left: 40%;
+		width: 100px;
+		height: 100px;
+		background-size: cover;
+		background-position: center;
+		background-image: url("../img/airplane.png");
+	}
+	.ipadHide{
+		display: none;
+	}
+	.slider{
+		height: 235px !important;
+	}
+	.logo{
+		height: 50px !important;
+		width: 50px !important;
+	}
+	.co-name{
+		font-size: 22px !important;
+	}
+	.slogan{
+		font-size: 11px !important;
+	}
+	.burger-container{
+		width: 80px !important;
+		height: 80px !important;
+		top: 25px !important;
+	}
+	.close{
+		width: 50px !important;
+		height: 50px !important;
+	}
+} /*closes media 800px*/
