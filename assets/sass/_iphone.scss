@@ -92,11 +92,11 @@ and (max-device-width : 667px) {
 		font-size: 16px !important;
 	}
 	.hero-footer{
-		height: 130px !important;
+		height: 100px !important;
 		top: 190px !important;
 	}
 	.slider{
-		height: 440px !important;
+		height: 420px !important;
 	}
 	.hero-footer-text{
 		top: 51px !important;
@@ -197,5 +197,8 @@ and (max-device-width : 667px) {
 	.hero{
 		position: relative !important;
 		top: 380px !important;
+	}
+	.slider-container{
+		height: 500px;
 	}
 }
