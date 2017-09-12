@@ -133,6 +133,7 @@
     display: inline !important; }
 
   .all-services {
+    /*font-size: 8px !important;*/
     margin: 0 auto !important;
     width: 20% !important;
     /*font-size: 10px !important;*/ }
@@ -187,7 +188,11 @@
   .contact-logo-align {
     position: relative;
     bottom: 21px;
-    right: 29px; } }
+    right: 29px; }
+
+  .hero {
+    position: relative !important;
+    top: 380px !important; } }
 @media only screen and (max-width: 800px) {
   .nav-bar {
     display: none !important; }
